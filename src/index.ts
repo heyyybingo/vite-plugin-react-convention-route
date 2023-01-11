@@ -46,7 +46,7 @@ export default function vitePluginReactConventionRoute(
       if (id === resolvedVirtualModuleId) {
         const esbuldResult = await transformWithEsbuild(
           assembleCode,
-          "/test.tsx",
+          `${name}.tsx`,
           {
             loader: "tsx",
           }
